@@ -16,12 +16,14 @@
 
 
 <script type="application/javascript">
+    var country;
     function geoip(json){
       console.log(json.country_code);
-      dataLayer.push({
-          'event': 'geo',
-          'countryCode': json.country_code
-      });
+    //   dataLayer.push({
+    //       'event': 'geo',
+    //       'countryCode': json.country_code
+    //   });
+        country = json.country_code;   
     }
   </script>
   
